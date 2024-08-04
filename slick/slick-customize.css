@@ -1,0 +1,79 @@
+.slider {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.slick-slide {
+	margin: 0px 0px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-next,
+.slick-prev {
+	z-index: 200;
+}
+
+.slick-next {
+	right: 35px;
+}
+
+.slick-prev {
+	left: 35px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+/* .slick-slide {
+	transition: all ease-in-out 0.3s;
+	opacity: 0.2;
+}
+
+.slick-active {
+	opacity: 0.5;
+}
+
+.slick-current {
+	opacity: 1;
+} */
+
+.slick-next,
+.slick-prev {
+	&::before {
+		content: "";
+	}
+	width: 40px;
+	height: 40px;
+}
+
+.slick-next:hover,
+.slick-next:focus,
+.slick-next {
+	background-image: url("../img/mainbanner/next_btn.png");
+	background-size: cover;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-prev {
+	background-image: url("../img/mainbanner/prev_btn.png");
+	background-size: cover;
+}
+
+.slick-dots li button::before {
+	content: "";
+}
+
+.slick-dots li button {
+	background-color: red;
+	border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+	background-color: blue;
+}
